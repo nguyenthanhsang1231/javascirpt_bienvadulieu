@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinhDiemTrungBinh</title>
+</head>
+<body>
+<input type="text" id="điểmlý"> <br>
+<input type="text" id="điểmhóa"> <br>
+<input type="text" id="điểmsinh"> <br>
+<button onclick="ra1()">diemtrungbinh</button>
+<button onclick="ra2()">tong</button>
+<script>
+    function ra1(){
+        let a = +document.getElementById("điểmlý").value;
+        let b = +document.getElementById("điểmhóa").value;
+        let c = +document.getElementById("điểmsinh").value;
+        let average = (a + b + c) / 3;
+        alert(average)
+           }
+           function ra2(){
+               let a = +document.getElementById("điểmlý").value;
+               let b = +document.getElementById("điểmhóa").value;
+               let c = +document.getElementById("điểmsinh").value;
+               let sum = ( a + b + c );
+               alert(sum)
+           }
+</script>
+</body>
+</html>

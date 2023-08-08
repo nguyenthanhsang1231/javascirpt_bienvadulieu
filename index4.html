@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thucHanhMayTinh</title>
+</head>
+<body>
+<h1>Caculator</h1>
+<input type="number" id="number1">
+<input type="number" id="number2">
+<br>
+<button onclick="cong()">+</button>
+<button>_</button>
+<button>*</button>
+<button>/</button>
+
+<p id="kq"></p>
+<script>
+    function cong() {
+        let a = +document.getElementById("number1").value;
+        let b = +document.getElementById("number2").value;
+        let result = a + b;
+        document.getElementById("kq").innerHTML = "Result : " + result;
+
+    }
+</script>
+</body>
+</html>
